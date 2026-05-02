@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lolu Net | Namonet Solution Limited</title>
+    <style>
+        body { 
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0px; 
+            color: rgb(255, 255, 255); 
+            background: linear-gradient(rgba(0, 40, 20, 0.85), rgba(0, 40, 20, 0.9)), url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f") center center / cover no-repeat; 
+            background-attachment: fixed;
+            overflow-x: hidden; 
+        }
+        header { text-align: center; padding: 80px 20px 70px; animation: fadeInUp 1s ease-out; }
+        header h1 { font-size: 46px; margin-bottom: 10px; letter-spacing: 1px; }
+        header p { font-size: 18px; opacity: 0.9; }
+        section { padding: 20px 20px; max-width: 900px; margin: auto; animation: fadeInUp 1.2s ease; }
+        .card { 
+            background: rgba(255, 255, 255, 0.08); 
+            padding: 22px; 
+            border-radius: 14px; 
+            backdrop-filter: blur(12px); 
+            box-shadow: 0px 6px 20px rgba(0,0,0,0.35); 
+            transition: 0.3s; 
+        }
+        .card:hover { transform: translateY(-5px); box-shadow: 0px 10px 30px rgba(0,0,0,0.45); }
+        h2 { margin-bottom: 15px; color: rgb(158, 255, 195); }
+        .btn { 
+            display: inline-block; 
+            padding: 14px 24px; 
+            background: linear-gradient(135deg, rgb(37, 211, 102), rgb(30, 190, 93)); 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            margin-top: 20px; 
+            font-weight: bold; 
+            transition: opacity 0.2s;
+        }
+        .btn:hover { opacity: 0.9; }
+        ol li { margin-bottom: 12px; line-height: 1.7; }
+        .pricing-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .price-box {
+            flex: 1;
+            min-width: 120px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .price-box.featured {
+            border-color: #25D366;
+            background: rgba(37, 211, 102, 0.1);
+        }
+        footer { text-align: center; padding: 30px 20px; background: rgba(0,0,0,0.6); color: #ccc; margin-top: 40px; }
+        .whatsapp-float { 
+            position: fixed; 
+            bottom: 20px; 
+            right: 20px; 
+            background: #25D366; 
+            color: white; 
+            border-radius: 50px; 
+            padding: 14px 18px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            display: flex; 
+            align-items: center;
+            gap: 8px; 
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+        @keyframes fadeInUp { 
+          0% { opacity: 0; transform: translateY(20px); }
+          100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+  <h1>LOLU NET</h1>
+  <p>Fast, Reliable Internet Designed for Your Everyday Life</p>
+  <a class="btn" href="http://connectivitycheck.gstatic.com/generate_204">Connect Now</a>
+</header>
+
+<section>
+  <div class="card">
+    <h2>Affordable High-Speed Internet</h2>
+    <p>Stay connected without limits. Enjoy smooth browsing, streaming, gaming and work with access starting from as low as <strong>Ksh 5</strong>, with speeds of up to <strong>20 Mbps</strong>.</p>
+    
+    <div class="pricing-grid">
+      <div class="price-box">
+        <strong>1 Hour</strong><br>Ksh 5
+      </div>
+      <div class="price-box">
+        <strong>Daily</strong><br>Ksh 20
+      </div>
+      <div class="price-box featured">
+        <strong>Weekly</strong><br>Ksh 100
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>How to Connect</h2>
+    <ol>
+      <li><strong>Connecting to hotspot?</strong> Open Wi-Fi settings and connect to <strong>Lolu Net</strong>.</li>
+      <li>Click <strong>Connect Now</strong> if the login page doesn't open automatically.</li>
+      <li>Select your preferred package and complete the payment.</li>
+      <li>You’ll be connected automatically.</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>Support</h2>
+    <p><strong>Call / WhatsApp:</strong> 0707683663</p>
+    <p><strong>Email:</strong> issues@namonet.org</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Lolu Net. All rights reserved.<br>A Service of Namonet Solution Limited</p>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/254707683663">
+  <span>💬</span> WhatsApp Support
+</a>
+
+</body>
+</html>
