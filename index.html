@@ -13,6 +13,21 @@
             background-attachment: fixed;
             overflow-x: hidden; 
         }
+        function openWifi() {
+    // Try to open WiFi settings (Android only)
+    window.location.href = "intent://settings#Intent;action=android.settings.WIFI_SETTINGS;end;";
+
+    // Fallback instructions after 2 seconds
+    setTimeout(function() {
+        alert(
+          "If WiFi did not open:\n\n" +
+          "1. Go to Settings\n" +
+          "2. Tap WiFi\n" +
+          "3. Select 'Lolu Net'\n\n" +
+          "Then come back here and tap Connect Now again."
+        );
+    }, 2000);
+}
         header { text-align: center; padding: 80px 20px 70px; animation: fadeInUp 1s ease-out; }
         header h1 { font-size: 46px; margin-bottom: 10px; letter-spacing: 1px; }
         header p { font-size: 18px; opacity: 0.9; }
@@ -88,7 +103,7 @@
 <header>
   <h1>LOLU NET</h1>
   <p>Fast, Reliable Internet Designed for Your Everyday Life</p>
-  <a class="btn" href="http://connectivitycheck.gstatic.com/generate_204">Connect Now</a>
+  <a class="btn" href="#" onclick="openWifi()">Connect Now</a>
 </header>
 
 <section>
